@@ -1,0 +1,253 @@
+/*      var Ami,bers=[]; (Declares an array)
+            javascript - arrays are dynamic
+            length adjusts depends on the elements that youve added
+            a.push()
+
+        For(x of Anumbers){
+        string += x+" ";
+                basically it just iterates through element of the array
+                in other words its 
+                for each of a numbers, do this
+
+        }
+
+
+        in order to 
+
+
+        document.getElementById("sortedElements").value
+        document.getElementById("sortedElements").InnerHTMLString
+        document.getElementById("sortedElements").string
+        Anumbers=[]; - clears the array if you arlrady have numbers for the array before
+
+        delete splice
+        const fruits = ["Banana","Orange","Apple","manga"]
+        delete fruits[0];
+        removes banana
+        which makes the array into something like
+        ["","Orange","Apple","manga"]
+         fruits.splice(1,2);
+["Banana","Orange","Apple","manga"]
+THIS WILL DELETE BOTH ORANGE AND APPLE
+1 is the starting point and 2 is the ending point
+document.getElementByID("deleteitem").addEventListener("click",90=>{
+
+
+
+
+}
+
+HTML TABLES
+
+"margin-left:auto; margin-right:auto;color:blue"
+
+<thead>   - BTable Headers - collections of one or more rows
+         <tr> - stands for table row
+             <td id="empname"> - stands for table data or table column
+               Employee Name
+             </td> 
+             <td>
+               Days Worked
+            </td>
+             <td>
+                DDaily Wage
+             </td>
+             <td>
+                Gross Pay
+             </td>
+             <td>
+                Deductions
+            </td>
+            <td>
+                 Net Pay
+            </td>
+
+         </tr>
+    <tbody> - Table Boody
+    </tbody>
+    <tfoot> - Table Footer - used to display the totals or basically just the final row of it.
+    </tfoot>
+</thead>   - Table Header End
+
+Just think of it as one TR having multiple TD columns
+
+*/
+
+
+<head>
+ <style>
+ h1{
+    /*input styles that you want for h1 here*/
+    background-color:black;
+
+ }
+ thead{
+    /* styles and colors that you want for the thead in here*/
+
+ }
+ #empname{
+    text-align: center;
+
+ }
+ .ndata{
+    text-align:right;
+
+ }
+ .fdate{
+    font-weight:bold;
+
+ }
+ </style>
+</head>
+
+it applies the last property in the class styling
+the latest style applies in the <style> portion
+doesnt matter how you call it in the <td class=""> portion
+if you want to edit in 
+
+<divs> are DIVISIONS 
+in the bod you should havec a main div 
+for example
+<div id="maindiv">
+<div id="headerdiv">
+    <h1> this is the page header</h1>
+</div>
+
+<div id="body-leftdiv">
+    <h1> Lmao Ipsum this is the left side of the body div</h1>
+</div>
+<div id="bodyrightupper">
+<img src="imagelinkhere" alt="Mountain" height ="" >
+</div>
+</div>
+
+
+Search up CSS grids in h3 schools
+<style>
+    #maindiv{
+        display:grid;
+        grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto
+         /*the amount of auto is the amount of rows that you have
+        auto stands for the amount of pixels you want it to be*/
+        grid-template-rows:auto auto auto auto auto auto auto auto
+        /*
+        in this case its 12 ROWS AND 8 COLUMNS
+        */
+        border: solid 1px;
+    }
+    #headerdiv{
+        grid-rowstart: 1;
+        grid-rowend: 1;
+        grid-column-start:1;
+        grid-column-end:8;
+        text-align:center;
+        width:400px;
+/* basically header starts at the first row of the first column and ends at the first row and the 8th column*/
+    }
+</style>
+
+
+------------------------------------------------------ DAY 2
+
+object - Is like a struct
+         elements of it are different types
+         come in pairs
+         variableName : value
+position div ids not h1s
+
+<!DOCTYPE html>
+<html>
+<boddy>
+<div id ="maindiv">
+   <div id="footerdiv"><H2>Copyright 2023</h2>
+   </div>
+   <div id="headerdiv">
+   <h2 id="pageheader"> SHopping cart </h2>
+   <div id = "inputdiv">
+   </div>
+   <div id="cartdiv">
+   <h3> Cart Items</h3>
+   <table id="itemstable" border=1>
+      <thead>
+         <tr>
+            <td> Item No.</td>
+            <td> Item Description</td>
+            <td> Item QUantity </td>
+            <td> Price </td>
+            <td> Amount</td>
+      </thead>
+      <tbody id="cartbody">
+
+      </tbody>
+      <tfooter>
+   </table>
+   </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+<select name"itemdesc" id="itemdesc">
+<option value="sardines"> sardines</option>
+</select>
+
+var cartitem ={
+   "item":"1",
+   "price":0,
+   "qty":1,
+   "itemamount" : function itemamount(){
+      return Math.round(this.price*this.qty*100)/100;
+   }
+   /* this means about the object youre inside */
+
+}
+
+function showcart(){
+   i,l,carttext,totalamountln;
+   vartbody;
+   l = cart.length
+
+
+}
+<script>
+   document.AddEventListener("load",
+   ()=>{
+      initcart();
+   })
+   function initcart(){
+   cart=[];
+
+   }
+   document.getElementByID("qty").addEventListener("keyup",
+   ()=>{
+
+      computeamount()
+   })
+   function computeamount(){
+      var q,p,a,
+      q= document.getElementByID("qty").value*1;
+      q= document.getElementByID("price").value*1;
+      a=q*pdocument.getElementtbyId("amount").value=a;
+
+   }
+   var cart=[];
+   
+</script>
+selects are parts that only have the same values
+
+confirm("Delete Item?")
+cart.splice(x,1)
+showcart();
+
+if you want to have the same values for ds you can use the _command
+
+margin-left:auto;
+margin-right:auto;
+
+#tablebody tr:nth-child(even){background-color:f2f2f2;}
+#tablebody tr:n-thchild(odd){background-color:f2f2f2;}
+parent   child    grandchild
